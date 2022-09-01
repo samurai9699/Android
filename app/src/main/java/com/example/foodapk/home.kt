@@ -11,17 +11,18 @@ class home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
-        val clickme=findViewById<Button>(R.id.btnback)
-
-        clickme.setOnClickListener{
-            Toast.makeText( this, "Exit", Toast.LENGTH_SHORT).show()
-        }
-     val btnback = findViewById<Button>(R.id.btnback)
-        btnback.setOnClickListener{
-            var Intent = Intent( this,IntroActivity::class.java)
-            startActivity(Intent)
-            finish()
-        }
+//
+//        val clickme=findViewById<Button>(R.id.btnback)
+//
+//        clickme.setOnClickListener{
+//            Toast.makeText( this, "Exit", Toast.LENGTH_SHORT).show()
+//        }
+//     val btnback = findViewById<Button>(R.id.btnback)
+//        btnback.setOnClickListener{
+//            var Intent = Intent( this,IntroActivity::class.java)
+//            startActivity(Intent)
+//            finish()
+//        }
+//    }
     }
 }

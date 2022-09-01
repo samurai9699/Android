@@ -7,70 +7,19 @@
     android:background="#FFFFFF"
     tools:context=".home">
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/background_intro" />
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"/>
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="393dp"
-        android:layout_height="527dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.539"
-        app:srcCompat="@drawable/ic_undraw_cooking_re_g99p" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="307dp"
-        android:layout_height="102dp"
-        android:text="Let's Cook"
-        android:textAlignment="center"
-        android:textColor="#ff5e00"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
-
-    <Button
-        android:id="@+id/btnback"
-        android:layout_width="243dp"
-        android:layout_height="54dp"
-        android:text="back"
-        android:textColor="#3d33a8"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="0.457" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="103dp"
-        android:layout_height="19dp"
-        android:text="back"
-        android:textAlignment="center"
-        android:textColor="#3d33a8"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btnback"
-        app:layout_constraintEnd_toEndOf="@+id/btnback"
-        app:layout_constraintStart_toStartOf="@+id/btnback"
-        app:layout_constraintTop_toTopOf="@+id/btnback" />
-
+        app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
