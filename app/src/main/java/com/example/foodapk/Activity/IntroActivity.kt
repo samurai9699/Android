@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.foodapk.R
-import com.example.foodapk.home
+import com.example.foodapk.MainActivity
 
 class IntroActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class IntroActivity : AppCompatActivity() {
         val s =supportActionBar?.hide()
 
         android.os.Handler().postDelayed({
-            val Intent = Intent(this@IntroActivity, home::class.java)
+            val Intent = Intent(this@IntroActivity, MainActivity::class.java)
             startActivity(Intent)
             finish()
         },3000)
